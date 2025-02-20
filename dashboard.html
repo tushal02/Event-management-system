@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Use relative paths if necessary -->
+  <link rel="stylesheet" href="dashboard.css" />
+  <script src="https://kit.fontawesome.com/26cf52b56a.js" crossorigin="anonymous"></script>
+  <title>Dashboard</title>
+</head>
+<body>
+  <header>
+    <div class="logo">
+        <i class="fa-solid fa-calendar-check"></i>
+      <h2>EventEase Dashboard</h2>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="dashboard.html">Home</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="#" id="logout">Logout</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="dashboard-container">
+    <!-- Sidebar for additional navigation -->
+    <aside class="sidebar">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="dashboard.html">Dashboard Overview</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="events.html">Manage Events</a></li>
+      </ul>
+    </aside>
+
+    <!-- Main Dashboard Content -->
+    <main>
+      <section class="welcome">
+        <h1>Welcome, <span id="userName"></span>!</h1>
+        <p>Here's a quick look at what's happening with your events and account.</p>
+      </section>
+
+      <!-- Profile Summary Widget -->
+      <section class="profile-summary widget">
+        <h2>Your Profile</h2>
+        <div class="profile-info">
+          <img src="profile.png" alt="User Avatar" class="avatar">
+          <div class="details">
+            <p><strong>Name:</strong> <span id="profileName">John Doe</span></p>
+            <p><strong>Email:</strong> <span id="profileEmail">john.doe@example.com</span></p>
+          </div>
+        </div>
+        <a href="profile.html" class="edit-btn">Edit Profile</a>
+      </section>
+
+      <!-- Upcoming Events Widget -->
+      <section class="upcoming-events widget">
+        <h2>Upcoming Events</h2>
+        <ul id="upcomingEvents">
+          <!-- Upcoming events will be dynamically loaded here -->
+          <li>No upcoming events. <a href="events.html">Create one now</a>.</li>
+        </ul>
+      </section>
+
+      <!-- Recent Activity Widget -->
+      <section class="recent-activity widget">
+        <h2>Recent Activity</h2>
+        <ul id="recentActivity">
+          <!-- Recent activity logs will be dynamically loaded here -->
+          <li>You have not performed any activity yet.</li>
+        </ul>
+      </section>
+    </main>
+  </div>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <p>Created by Tushal Kumar</p>
+    <div class="social-links">
+      <div><i class="fa-brands fa-linkedin-in"></i> <a href="https://www.linkedin.com/in/tushal-kumar/">Linkedin</a></div>
+      <div><i class="fa-brands fa-github"></i> <a href="https://github.com/tushal02">Git Hub</a></div>
+      <div><i class="fa-brands fa-whatsapp"></i> <a href="https://wa.me/+923707610420">Whatsapp</a></div>
+    </div>
+  </footer>
+
+  <script src="dashboard.js"></script>
+</body>
+</html>

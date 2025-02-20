@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="profile.css">
+  <script src="https://kit.fontawesome.com/26cf52b56a.js" crossorigin="anonymous"></script>
+  <title>User Profile</title>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="profile.png" alt="EventEase Logo">
+      <h2>Profile</h2>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="index.html" id="logout">Logout</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="main-container">
+    <!-- Sidebar for additional navigation -->
+    <aside class="sidebar">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="dashboard.html">Dashboard Overview</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="events.html">Manage Events</a></li>
+      </ul>
+    </aside>
+
+    <!-- Profile content -->
+    <div class="profile-container">
+      <h1>Your Profile</h1>
+      <div class="profile-details">
+        <img src="profile.png" alt="User Avatar" class="avatar">
+        <p><strong>Name:</strong> <span id="profileName">John Doe</span></p>
+        <p><strong>Email:</strong> <span id="profileEmail">john.doe@example.com</span></p>
+      </div>
+      <button id="editProfile">Edit Profile</button>
+    </div>
+  </div>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <p>Created by Tushal Kumar</p>
+    <div class="social-links">
+      <div><i class="fa-brands fa-linkedin-in"></i> <a href="https://www.linkedin.com/in/tushal-kumar/">Linkedin</a></div>
+      <div><i class="fa-brands fa-github"></i> <a href="https://github.com/tushal02">Git Hub</a></div>
+      <div><i class="fa-brands fa-whatsapp"></i> <a href="https://wa.me/+923707610420">Whatsapp</a></div>
+    </div>
+  </footer> 
+
+  <script src="profile.js"></script>
+</body>
+</html>

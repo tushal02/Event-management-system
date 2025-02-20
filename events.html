@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="events.css" />
+  <script src="https://kit.fontawesome.com/26cf52b56a.js" crossorigin="anonymous"></script>
+  <title>Manage Events</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="/index.html" id="logout">Logout</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="main-container">
+      <!-- Sidebar for additional navigation -->
+      <aside class="sidebar">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="dashboard.html">Dashboard Overview</a></li>
+          <li><a href="profile.html">Profile</a></li>
+          <li><a href="events.html">Manage Events</a></li>
+        </ul>
+      </aside>
+
+      <!-- Content Section -->
+      <div class="content">
+        <section class="create-event">
+          <h2>Create New Event</h2>
+          <form id="eventForm">
+            <input type="text" placeholder="Event Name" id="eventName" required>
+            <input type="date" id="eventDate" required>
+            <textarea placeholder="Event Description" id="eventDesc" required></textarea>
+            <button type="submit">Create Event</button>
+          </form>
+        </section>
+
+        <section class="event-list">
+          <h2>Your Events</h2>
+          <ul id="eventsContainer">
+            <!-- Events will be dynamically added here -->
+          </ul>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <p>Created by Tushal Kumar</p>
+    <div class="social-links">
+      <div><i class="fa-brands fa-linkedin-in"></i> <a href="https://www.linkedin.com/in/tushal-kumar/">Linkedin</a></div>
+      <div><i class="fa-brands fa-github"></i> <a href="https://github.com/tushal02">Git Hub</a></div>
+      <div><i class="fa-brands fa-whatsapp"></i> <a href="https://wa.me/+923707610420">Whatsapp</a></div>
+    </div>
+  </footer>
+
+  <script src="events.js"></script>
+</body>
+</html>
